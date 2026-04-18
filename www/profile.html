@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+
+    <header class="bg-white text-dark shadow-sm py-3" style="position: fixed; top: 0; width: 100%; z-index: 10;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="img/logo.webp" alt="Logo" class="rounded-circle border shadow-sm mr-3"
+                    style="width: 60px; height: 60px; object-fit: cover;">
+                <h1 class="font-weight-bold text-uppercase m-0" style="font-family: 'Arial', sans-serif; font-size: 36px; 
+                        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">
+                    TripTact
+                </h1>
+            </div>
+            <button class="navbar-toggler" type="button" onclick="toggleNav()">
+                <img src="img/control.gif" alt="Toggle" class="navbar-toggler-icon">
+            </button>
+        </div>
+    </header>
+
+    <div id="sideNav">
+        <div class="welcome-container">
+            <p>Welcome</p>
+            <img src="img/smile.png" alt="Smile" />
+        </div>
+
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <a href="travel.html">
+            <img src="img/hotel.gif" alt="Travel">
+            Travel
+        </a>
+        <a href="displayJournal.html">
+            <img src="img/journal.gif" alt="Journal">
+            Journal
+        </a>
+        <a href="myTrip.html">
+            <img src="img/cart.gif" alt="MyTrip">
+            MyTrip
+        </a>
+        <a href="profile.html">
+            <img src="img/user.gif" alt="Profile">
+            Profile
+        </a>
+    </div>
+    <div class="profile-container">
+        <h1>User Profile</h1>
+        <div class="profile-pic-container">
+            <img id="profile-pic" src="" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <!-- Username -->
+            <p><strong>Username:</strong>
+                <span id="username"></span></br>
+                <button class="edit-btn" onclick="editField('username')">Edit</button>
+            </p>
+
+            <!-- Email (non-editable) -->
+            <p><strong>Email:</strong> <span id="email"></span></p>
+
+            <!-- Birthday -->
+            <p><strong>Birthday:</strong>
+                <span id="birthday"></span></br>
+                <button class="edit-btn" onclick="editField('birthday')">Edit</button>
+            </p>
+
+            <!-- Gender -->
+            <p><strong>Gender:</strong>
+                <span id="gender"></span></br>
+                <button class="edit-btn" onclick="editField('gender')">Edit</button>
+            </p>
+        </div>
+
+        <!-- Save button -->
+        <button id="save-btn" style="display: none;" onclick="saveProfile()">Save Changes</button>
+        <button id="logout-btn" onclick="confirmLogout()">Logout</button>
+    </div>
+
+    <script src="js/profile.js"></script>
+</body>
+
+</html>

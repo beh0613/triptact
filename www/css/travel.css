@@ -1,0 +1,178 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient( #dbe5eb);
+}
+
+/*Navigation*/
+#sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 9999; /* Ensure it's in front of other elements */
+}
+
+#sideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+#sideNav a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 10px;
+    border: none;
+    background: none;
+    }
+
+.navbar-toggler img {
+    width: 40px;
+    height: 40px;
+}
+
+header {
+      background-color: #ffffff; /* Keep white background for simplicity */
+    border: 1px solid #e1e1e1; /* Light gray border for subtlety */
+    padding: -25px 55px; /* Slight padding for balance */
+    padding-bottom: 2px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+    border-radius: 15px 15px 15px 15px;
+}
+
+
+
+header h1 {
+    margin: 0;
+    font-weight: 500; /* Slightly bolded for readability */
+    color: #000000; /* Light blue */
+    letter-spacing: 1px;
+    text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-container {
+    display: flex;
+    align-items: center; /* Align text and image vertically */
+    justify-content: center; /* Center the content horizontally */
+    gap: 10px; /* Add spacing between text and image */
+    font-family: 'Arial', sans-serif;
+    font-size: 24px; /* Size of the text */
+    font-weight: bold;
+    color: #2a9d8f; /* Stylish color for text */
+    margin-top: 20px; /* Add some margin if needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.welcome-container img {
+    width: 30px;
+    height: 30px; /* Size of the smile icon */
+    object-fit: cover; /* Keep the image aspect ratio intact */
+}
+/* Custom styles for the place display boxes */
+.place-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.place-box:hover {
+    transform: scale(1.05);
+}
+.place-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.place-content {
+    padding: 10px;
+}
+.place-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+.place-description {
+    font-size: 14px;
+    color: #555;
+}
+
+.search-container {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Align to center */
+    text-align: center;
+}
+
+#countryForm {
+    display: flex;
+    flex-direction: column; /* Stack input and button vertically */
+    align-items: center; /* Center the elements horizontally */
+    gap: 20px; /* Add space between input and button */
+}
+
+#countryInput {
+    height: 40px; /* Adjust height */
+    font-size: 12px; /* Adjust font size */
+    width: 250px; /* Set input field width */
+}
+
+.btn {
+    height: 40px; /* Match input field height */
+    width: 250px; /* Match input field width */
+    font-size: 12px; /* Adjust font size */
+}
+
+
+
+.destination-boxes {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+        }
+
+.destination-box {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 80%;
+        }
+
+        #carouselBackground .carousel-inner {
+    height: 100vh;
+    background-color: black;
+}
+
+#carouselBackground .carousel-item img {
+    object-fit: cover;
+    height: 100vh;
+}

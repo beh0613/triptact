@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+    <!-- Chart.js for line chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/weather.css">
+
+</head>
+<style>
+    #forecastChart {
+        height:20px;  /* Set the chart height */
+        width: 100%;  /* Set the chart to take full width of the container */
+    }
+</style>
+<body>
+
+<header class="bg-white text-dark shadow-sm py-3" style="position: fixed; top: 0; width: 100%; z-index: 10;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="img/back.png" alt="Back" 
+                 id="backButton"
+                 style="width: 30px; height: 30px; cursor: pointer; margin-right: 5px;">
+
+                <img src="img/logo.webp" alt="Logo" 
+                     class="rounded-circle border shadow-sm mr-3" 
+                     style="width: 60px; height: 60px; object-fit: cover;">
+                <h1 class="font-weight-bold text-uppercase m-0" 
+                    style="font-family: 'Arial', sans-serif; font-size: 36px; 
+                        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">
+                    TripTact
+                </h1>
+            </div>
+            <button class="navbar-toggler" type="button" onclick="toggleNav()">
+                <img src="img/control.gif" alt="Toggle" class="navbar-toggler-icon">
+            </button>
+        </div>
+    </header>
+
+    <div id="sideNav">
+        <div class="welcome-container">
+            <p>Welcome</p>
+            <img src="img/smile.png" alt="Smile" />
+        </div>
+
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <a href="travel.html">
+            <img src="img/hotel.gif" alt="Travel">
+            Travel
+        </a>
+        <a href="displayJournal.html">
+            <img src="img/journal.gif" alt="Journal">
+            Journal
+        </a>
+        <a href="myTrip.html">
+            <img src="img/cart.gif" alt="MyTrip">
+            MyTrip
+        </a>
+        <a href="profile.html">
+            <img src="img/user.gif" alt="Profile">
+            Profile
+        </a>
+    </div> 
+
+ <!-- Weather Information Section -->
+    <div id="weather-info">
+        <h3>Loading Weather Information...</h3>
+        <p>Please wait while we retrieve the latest data.</p>
+    </div>
+
+    <script src="js/weather.js"></script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

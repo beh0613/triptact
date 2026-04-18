@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels & Attractions</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/attraction-hotels.css">
+</head>
+<body>
+    <header class="bg-white text-dark shadow-sm py-3" style="position: fixed; top: 0; width: 100%; z-index: 10;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="img/back.png" alt="Back" 
+                 id="backButton"
+                 style="width: 30px; height: 30px; cursor: pointer; margin-right: 5px;">
+
+                <img src="img/logo.webp" alt="Logo" 
+                     class="rounded-circle border shadow-sm mr-3" 
+                     style="width: 60px; height: 60px; object-fit: cover;">
+                <h1 class="font-weight-bold text-uppercase m-0" 
+                    style="font-family: 'Arial', sans-serif; font-size: 36px; 
+                        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);">
+                    TripTact
+                </h1>
+            </div>
+            <button class="navbar-toggler" type="button" onclick="toggleNav()">
+                <img src="img/control.gif" alt="Toggle" class="navbar-toggler-icon">
+            </button>
+        </div>
+    </header>
+
+    <div id="sideNav">
+        <div class="welcome-container">
+            <p>Welcome</p>
+            <img src="img/smile.png" alt="Smile" />
+        </div>
+
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <a href="travel.html">
+            <img src="img/hotel.gif" alt="Travel">
+            Travel
+        </a>
+        <a href="displayJournal.html">
+            <img src="img/journal.gif" alt="Journal">
+            Journal
+        </a>
+        <a href="myTrip.html">
+            <img src="img/cart.gif" alt="MyTrip">
+            MyTrip
+        </a>
+        <a href="profile.html">
+            <img src="img/user.gif" alt="Profile">
+            Profile
+        </a>
+    </div> 
+    
+    <div id="results" style="margin-top:80px;">
+        <h1 id="selectedCountry">Loading...</h1>
+        <div id="attractions">
+        <h2>Attractions</h2>
+        <div id="attractionGrid" class="result-grid">
+            <!-- Attraction cards will be dynamically added here -->
+        </div>
+    </div>
+    <div id="hotels">
+        <h2>Hotels</h2>
+        <div id="hotelGrid" class="result-grid">
+            <!-- Hotel cards will be dynamically added here -->
+        </div>
+    </div>
+    
+</div>
+
+
+    <script src="js/attraction-hotels.js"></script>
+</body>
+</html>
+   

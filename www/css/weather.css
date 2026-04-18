@@ -1,0 +1,134 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    filter: brightness(1.2); /* Brighten the image for more clarity */
+}
+
+/* Navigation */
+#sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 9999;
+}
+
+#sideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+#sideNav a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 10px;
+    border: none;
+    background: none;
+}
+
+.navbar-toggler img {
+    width: 40px;
+    height: 40px;
+}
+
+header {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    padding: -25px 55px;
+    padding-bottom: 2px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 500;
+    color: #000000;
+    letter-spacing: 1px;
+    text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2a9d8f;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-container img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+/* Style for Weather Section */
+        #weather-info {
+            margin: 100px auto 20px; /* Add space from header */
+            padding: 20px;
+            max-width: 800px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        #weather-info h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #003366;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+            text-shadow: 1px 1px 2px rgba(0, 51, 102, 0.2);
+        }
+
+        #weather-info p {
+            font-size: 18px;
+            font-weight: 400;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        #weather-info p span {
+            font-weight: bold;
+            color: #007BFF;
+        }
+
+        #weather-info .error-message {
+            color: #ff0000;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /* Add background image to the weather container */
+        #weather-info {
+            background-image: linear-gradient(135deg, #eaf4fc, #e4f7f8);
+        }

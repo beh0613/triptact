@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/tourist.webp') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(6px) brightness(1.0); /* Applies blur and brightness effects */
+    z-index: -1; /* Places the background behind all other content */
+}
+
+
+/* Navigation */
+#sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 9999;
+}
+
+#sideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+#sideNav a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 10px;
+    border: none;
+    background: none;
+}
+
+.navbar-toggler img {
+    width: 40px;
+    height: 40px;
+}
+
+header {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    padding: -25px 55px;
+    padding-bottom: 2px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 500;
+    color: #000000;
+    letter-spacing: 1px;
+    text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2a9d8f;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-container img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+/* Collection Items */
+/* For the collection cards */
+.collection-item .card {
+    border-radius: 25px;
+    margin: 10px;  /* Adjusting margin between cards */
+}
+
+.collection-item .card img {
+    height: 100px;  /* Adjust the image size */
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+
+/* Reducing font size for text */
+.collection-item .card-body {
+    padding: 5px;
+}
+
+.collection-item .card-title {
+    font-size: 12px;  /* Smaller font size for the title */
+    font-weight: bold;
+    line-height: 1.2; /* Tighten line height */
+    letter-spacing: -0.5px; /* Adjust letter spacing to make the text more compact */
+   
+}
+
+.collection-item .card-text {
+    font-size: 10px;  /* Smaller font size for the text */
+     line-height: 1.0; /* Slightly tighter line height for descriptions */
+    letter-spacing: -0.5px; /* Reduce space between letters */
+    margin: 0;
+    padding: 5px;
+    text-align: justify;
+}
+
+.collection-item .btn {
+    font-size: 12px;  /* Smaller font size for buttons */
+    padding: 5px 10px;
+}
+
+.collection-item .card-text strong {
+    margin-right: 5px;  /* Small space after the label */
+}
+
+
+
+.collection-title {
+    font-family: 'Fredoka One', sans-serif; /* Rounded font style */
+    font-size: 2.5rem; /* Adjust size for emphasis */
+    color: black; /* Black text for strong contrast */
+    text-align: center; /* Center the heading */
+    margin-top: 100px; /* Maintain the specified spacing */
+    padding: 10px 20px; /* Add some padding for balance */
+    border-radius: 30px; /* Smooth edges */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: rgba(250, 250, 250, 0.7); /* Light gray background with transparency */
+    letter-spacing: 1.5px; /* Slight spacing between letters */
+}
+
+
